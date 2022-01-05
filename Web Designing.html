@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#909090;">
+<head>
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #636363;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #B4B4B4;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #B4B4B4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #636363;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a href="Piaoan Homepage.html">Home</a>
+  <a href="About Me.html">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Works
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Web Development.html">Web Development</a>
+      <a href="Web Designing.html">Web Designing</a>
+      <a href="Work Immersion.html">Work Immersion</a>
+    </div>
+  </div> 
+</div>
+
+<style>
+* {box-sizing: border-box}
+.mySlides1, {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center">Web Designing</h1>
+<h3 style="text-align:center">In this page Samples of web designing I've made during my senior high school year <br> with the use of  using Adobe Photoshop, HTML and PHP under JDVP Training</h3>
+
+<h3>Using HTML:</h3>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="bb1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="bb2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="bb3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+<script>
+var slideIndex = [1];
+var slideId = ["mySlides1"]
+showSlides(1, 0);
+
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<center>
+<video width="600" controls>
+  <source src="video-1616596784.mp4" type="video/mp4">
+</video>
+
+<h3 style="text-align:left;">Using PHP:</h3>
+<center>
+<video width="600" controls>
+  <source src="video-1616596772.mp4" type="video/mp4">
+</video>
+</center>
+
+
+<h3 style="text-align:left;">Using Photoshop:</h3>
+<center>
+<video width="600" controls>
+  <source src="video-1616596647.mp4" type="video/mp4">
+</video>
+</center>
